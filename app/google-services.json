@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1074538438091",
+    "project_id": "bloodmatch-dbf05",
+    "storage_bucket": "bloodmatch-dbf05.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074538438091:android:086db00ba2ab4cbcc9aa4e",
+        "android_client_info": {
+          "package_name": "com.mrapps.bloodmatch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHFcdfILU8bn0duuLbjs77ZarjkMiZRfI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
