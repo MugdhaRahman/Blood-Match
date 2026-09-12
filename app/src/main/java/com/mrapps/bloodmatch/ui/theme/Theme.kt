@@ -17,7 +17,8 @@ private val DarkColorScheme = darkColorScheme(
     primaryContainer = BloodRedDark,
     secondary = BloodRedLight,
     background = BloodBackgroundDark,
-    surface = BloodSurfaceDark
+    surface = BloodSurfaceDark,
+    onSurfaceVariant = HintDark
 )
 
 private val LightColorScheme = lightColorScheme(
@@ -27,7 +28,8 @@ private val LightColorScheme = lightColorScheme(
     secondary = BloodRedDark,
     tertiary = BloodRedLight,
     background = BloodBackground,
-    surface = BloodSurface
+    surface = BloodSurface,
+    onSurfaceVariant = HintLight
 )
 
 @Composable

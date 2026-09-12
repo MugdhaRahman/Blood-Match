@@ -16,6 +16,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.mrapps.bloodmatch.ui.auth.AuthState
 import com.mrapps.bloodmatch.ui.auth.AuthViewModel
+import com.mrapps.bloodmatch.ui.theme.BloodButton
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -56,7 +57,7 @@ fun RegisterScreen(
             Text((state as AuthState.Error).message, color = MaterialTheme.colorScheme.error)
         }
         Spacer(Modifier.height(16.dp))
-        Button(
+        BloodButton(
             onClick = { vm.register(name, email, phone, bloodGroup, password, onRegisterSuccess) },
             modifier = Modifier.fillMaxWidth(),
             enabled = state !is AuthState.Loading && name.isNotBlank() && email.isNotBlank() && password.length >= 6

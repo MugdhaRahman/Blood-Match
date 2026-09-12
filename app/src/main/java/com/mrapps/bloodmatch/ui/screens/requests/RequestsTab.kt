@@ -14,6 +14,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.mrapps.bloodmatch.data.model.BloodRequest
 import com.mrapps.bloodmatch.ui.requests.RequestViewModel
+import com.mrapps.bloodmatch.ui.theme.BloodButton
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -109,7 +110,7 @@ private fun CreateRequestDialog(vm: RequestViewModel, onDismiss: () -> Unit) {
             }
         },
         confirmButton = {
-            Button(
+            BloodButton(
                 onClick = {
                     vm.postRequest(bloodGroup, units.toIntOrNull() ?: 1, hospital, city, urgency, note, onDismiss)
                 },

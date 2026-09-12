@@ -54,7 +54,7 @@ private fun HomeTab(onRequestClick: () -> Unit) {
             Column(Modifier.padding(16.dp)) {
                 Text("Emergency? Request blood now", style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.onPrimary)
                 Spacer(Modifier.height(8.dp))
-                Button(onClick = onRequestClick, colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.surface, contentColor = MaterialTheme.colorScheme.primary)) { Text("Request Blood") }
+                com.mrapps.bloodmatch.ui.theme.BloodButton(onClick = onRequestClick) { Text("Request Blood") }
             }
         }
     }
@@ -79,6 +79,6 @@ private fun ProfileTab(onLogout: () -> Unit) {
         Text(profile?.email ?: "", style = MaterialTheme.typography.bodyMedium)
         Text("${profile?.bloodGroup ?: ""}  •  ${profile?.phone ?: ""}", style = MaterialTheme.typography.bodyMedium)
         Spacer(Modifier.height(16.dp))
-        Button(onClick = onLogout) { Text("Logout") }
+        com.mrapps.bloodmatch.ui.theme.BloodButton(onClick = onLogout) { Text("Logout") }
     }
 }

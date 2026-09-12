@@ -15,6 +15,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.mrapps.bloodmatch.ui.auth.AuthState
 import com.mrapps.bloodmatch.ui.auth.AuthViewModel
+import com.mrapps.bloodmatch.ui.theme.BloodButton
 
 @Composable
 fun LoginScreen(
@@ -50,7 +51,7 @@ fun LoginScreen(
             Text((state as AuthState.Error).message, color = MaterialTheme.colorScheme.error)
         }
         Spacer(Modifier.height(20.dp))
-        Button(
+        BloodButton(
             onClick = { vm.login(email, password, onLoginSuccess) },
             modifier = Modifier.fillMaxWidth(),
             enabled = state !is AuthState.Loading && email.isNotBlank() && password.isNotBlank()

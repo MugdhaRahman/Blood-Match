@@ -13,3 +13,11 @@ val BloodOnPrimary = Color(0xFFFFFFFF)
 val BloodRedDarkTheme = Color(0xFFD32F2F)
 val BloodBackgroundDark = Color(0xFF1A0C0C)
 val BloodSurfaceDark = Color(0xFF261414)
+
+// Darker hint / label color for text fields (light & dark)
+val HintLight = Color(0xFF6B3A3A)
+val HintDark = Color(0xFFD9AFAF)
+
+// Disabled button tones (darker than default M3 + bordered)
+val BloodDisabled = Color(0xFFE4CFCF)
+val BloodDisabledText = Color(0xFF7F3B3B)
